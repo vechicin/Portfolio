@@ -1,47 +1,93 @@
-.background{
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
     display: flex;
-    position: absolute;
-    background-image: url('/images/yellow-triangle.svg');
-    height: 74px;
-    width: 74px;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/image_geometry_1.svg');
+    background-repeat: no-repeat;
+}
+
+.hamburger{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-icon{
+    background-image: url(/images/ic_menu.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 19px 16px 0 0;
 }
 
 .container{
-    display: flex;
+    margin-block-start: 104px;
+    padding-inline: 16px;
 }
 
 .name{
     color: #1A2236;
-    background-color: rosybrown;
-    width: 220px;
-    height: 100px;
-    margin-left: 16px;
-    margin-top: 104px;
-    justify-content: center;
     font-family: 'Playfair Display', serif;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 100%;
+    margin-block-end: 20px;
     font-weight: 400;
-    font-style: normal;
 }
 
 .description{
-    background-color: royalblue;
     color: #1A2236;
-    width: 288px;
-    height: 126px;
-    margin-top: 224px;
-    margin-left: 16px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin-block-end: 40px;
 }
 
 .button{
-    background-color: salmon;
-    width: 288px;
+    margin-block-end: 32px;
+}
+
+.actual-button{
+    background: #1A2236;
+    color: #FFFFFF;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
     height: 50px;
-    margin-top: 390px;
-    margin-left: 16px;
+    text-align: center;
+}
+
+.bottom-image{
+    background-image: url(/images/image_geometry_2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-inline: -16px;
+    height: 180px;
+    width: 100vw;
+}
+
+.actual-button:hover{
+    border: 1px solid #1A2236;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    color: #1A2236;
+}
+
+.actual-button:focus{
+    border: 2px solid #1A2236;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    color: #1A2236;
 }
