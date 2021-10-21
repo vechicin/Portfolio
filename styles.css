@@ -58,6 +58,7 @@
 }
 
 .actual-button {
+  margin-block-end: 32px;
   background: #1a2236;
   color: #fff;
   width: 100%;
