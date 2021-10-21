@@ -5,8 +5,6 @@
 
 ![screenshot](./images/screenshot.png)
 
-The project has an HTML file with a simple "Hello Microverse!" header colored red with CSS.
-
 ## Built With
 
 - HTML and CSS
