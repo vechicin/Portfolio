@@ -9,7 +9,7 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-image: url('./images/image_geometry_1.svg');
+  background-image: url(./images/image_geometry_1.svg);
   background-repeat: no-repeat;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .btn-icon {
-  background-image: url('./images/ic_menu.svg');
+  background-image: url(./images/ic_menu.svg);
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
@@ -70,7 +70,7 @@
 }
 
 .bottom-image {
-  background-image: url('./images/image_geometry_2.svg');
+  background-image: url(./images/image_geometry_2.svg);
   background-size: cover;
   background-repeat: no-repeat;
   margin-inline: -16px;
