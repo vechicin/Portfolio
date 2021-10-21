@@ -1,0 +1,47 @@
+.background{
+    display: flex;
+    position: absolute;
+    background-image: url('/images/yellow-triangle.svg');
+    height: 74px;
+    width: 74px;
+}
+
+.container{
+    display: flex;
+}
+
+.name{
+    color: #1A2236;
+    background-color: rosybrown;
+    width: 220px;
+    height: 100px;
+    margin-left: 16px;
+    margin-top: 104px;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.description{
+    background-color: royalblue;
+    color: #1A2236;
+    width: 288px;
+    height: 126px;
+    margin-top: 224px;
+    margin-left: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.button{
+    background-color: salmon;
+    width: 288px;
+    height: 50px;
+    margin-top: 390px;
+    margin-left: 16px;
+}
