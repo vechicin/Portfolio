@@ -94,13 +94,13 @@
   color: #1a2236;
 }
 
-.projects-section{
+.projects-section {
   display: grid;
   grid-template: 1fr/1fr;
   padding-inline: 16px;
 }
 
-.projects-title{
+.projects-title {
   font-family: 'Playfair Display', serif;
   font-size: 50px;
   line-height: 100%;
@@ -108,13 +108,13 @@
   margin-block-end: 32px;
 }
 
-.projects-template{
+.projects-template {
   display: flex;
   flex-direction: column;
   margin-inline: -16px;
 }
 
-.project-name{
+.project-name {
   padding: 20px;
   order: 2;
   background-color: #1a2236;
@@ -125,19 +125,19 @@
   line-height: 80%;
 }
 
-.project-image{
+.project-image {
   margin-block: -2px;
   order: 1;
 }
 
-.actual-image{
+.actual-image {
   width: 100%;
   height: auto;
   display: block;
   overflow: hidden;
 }
 
-.project-tags{
+.project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -147,9 +147,9 @@
   color: #fff;
 }
 
-.languages{
+.languages {
   padding: 10px;
-  background-color: #98DEDE;
+  background-color: #98dede;
   color: #1a2236;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -157,7 +157,7 @@
   line-height: 80%;
 }
 
-.project-button{
+.project-button {
   padding: 20px;
   order: 2;
   background-color: #1a2236;
@@ -177,21 +177,21 @@
   margin-top: 26px;
 }
 
-.project-button:hover{
+.project-button:hover {
   background-color: #fff;
   color: #1a2236;
   border: 1px solid #1a2236;
   box-sizing: border-box;
 }
 
-.project-button:focus{
+.project-button:focus {
   background-color: #fff;
   color: #1a2236;
   border: 2px solid #1a2236;
   box-sizing: border-box;
 }
 
-.arrow-icon{
+.arrow-icon {
   background-image: url(./images/ic_arrow_right.svg);
   width: 24px;
   height: 24px;
@@ -201,19 +201,19 @@
   margin-left: 10px;
 }
 
-.project-button:hover .arrow-icon{
+.project-button:hover .arrow-icon {
   filter: invert(1);
 }
 
-.project-button:focus .arrow-icon{
+.project-button:focus .arrow-icon {
   filter: invert(1);
 }
 
-.about{
+.about {
   padding-inline: 16px;
 }
 
-.about-title{
+.about-title {
   margin-block-end: 20px;
   font-family: 'Playfair Display', serif;
   font-weight: 400;
@@ -223,11 +223,11 @@
   margin-top: 56px;
 }
 
-.about-description{
+.about-description {
   margin-top: 20px;
 }
 
-.about-button{
+.about-button {
   margin-block-start: 32px;
   height: 50px;
   background-color: #1a2236;
@@ -243,7 +243,7 @@
   font-weight: 500;
 }
 
-.download-icon{
+.download-icon {
   margin-left: 20px;
   background-image: url(./images/ic_download.svg);
   width: 26px;
@@ -253,36 +253,36 @@
   background-position: center;
 }
 
-.about-button:hover{
+.about-button:hover {
   background-color: #fff;
   color: #1a2236;
   border: 1px solid #1a2236;
   box-sizing: border-box;
 }
 
-.about-button:focus{
+.about-button:focus {
   background-color: #fff;
   color: #1a2236;
   border: 2px solid #1a2236;
   box-sizing: border-box;
 }
 
-.about-button:hover .download-icon{
+.about-button:hover .download-icon {
   filter: invert(1);
 }
 
-.actual-button:focus .download-icon{
+.actual-button:focus .download-icon {
   filter: invert(1);
 }
 
-.skills{
+.skills {
   display: grid;
   grid-template: 1fr/1fr;
   margin-top: 40px;
   gap: 16px;
 }
 
-.languages-skills{
+.languages-skills {
   background-image: url(./images/ic_languages_mob.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -290,28 +290,28 @@
   font-size: 20px;
   font-family: 'Poppins', serif;
   font-weight: 800;
-  background-color: #1C528A;
+  background-color: #1c528a;
   color: #fff;
 }
 
-.languages-title{
+.languages-title {
   margin-bottom: 21px;
   font-size: 20px;
   font-weight: 800;
   line-height: 30px;
 }
 
-.languages-list{
+.languages-list {
   list-style-position: inside;
 }
 
-.actual-language{
+.actual-language {
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
 }
 
-.frameworks{
+.frameworks {
   background-image: url(./images/ic_framework.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -319,28 +319,28 @@
   font-size: 20px;
   font-family: 'Poppins', serif;
   font-weight: 800;
-  background-color: #E2505C;
+  background-color: #e2505c;
   color: #fff;
 }
 
-.frameworks-title{
+.frameworks-title {
   margin-bottom: 21px;
   font-size: 20px;
   font-weight: 800;
   line-height: 30px;
 }
 
-.frameworks-list{
+.frameworks-list {
   list-style-position: inside;
 }
 
-.actual-frameworks{
+.actual-frameworks {
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
 }
 
-.skills-skills{
+.skills-skills {
   background-image: url(./images/ic_skills.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -348,22 +348,22 @@
   font-size: 20px;
   font-family: 'Poppins', serif;
   font-weight: 800;
-  background-color: #FEBF52;
+  background-color: #febf52;
   color: #fff;
 }
 
-.skills-title{
+.skills-title {
   margin-bottom: 21px;
   font-size: 20px;
   font-weight: 800;
   line-height: 30px;
 }
 
-.skills-list{
+.skills-list {
   list-style-position: inside;
 }
 
-.actual-skills{
+.actual-skills {
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
