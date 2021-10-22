@@ -94,6 +94,277 @@
   color: #1a2236;
 }
 
+.projects-section{
+  display: grid;
+  grid-template: 1fr/1fr;
+  padding-inline: 16px;
+}
+
+.projects-title{
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  line-height: 100%;
+  margin-block-start: 40px;
+  margin-block-end: 32px;
+}
+
+.projects-template{
+  display: flex;
+  flex-direction: column;
+  margin-inline: -16px;
+}
+
+.project-name{
+  padding: 20px;
+  order: 2;
+  background-color: #1a2236;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 80%;
+}
+
+.project-image{
+  margin-block: -2px;
+  order: 1;
+}
+
+.actual-image{
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+.project-tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 16px;
+  order: 2;
+  background-color: #1a2236;
+  color: #fff;
+}
+
+.languages{
+  padding: 10px;
+  background-color: #98DEDE;
+  color: #1a2236;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 10.33334px;
+  line-height: 80%;
+}
+
+.project-button{
+  padding: 20px;
+  order: 2;
+  background-color: #1a2236;
+  color: #fff;
+  border: 1px solid #fff;
+  width: auto;
+  padding-inline: 10px;
+  height: 44px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin-top: 26px;
+}
+
+.project-button:hover{
+  background-color: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+  box-sizing: border-box;
+}
+
+.project-button:focus{
+  background-color: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
+  box-sizing: border-box;
+}
+
+.arrow-icon{
+  background-image: url(./images/ic_arrow_right.svg);
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10px;
+}
+
+.project-button:hover .arrow-icon{
+  filter: invert(1);
+}
+
+.project-button:focus .arrow-icon{
+  filter: invert(1);
+}
+
+.about{
+  padding-inline: 16px;
+}
+
+.about-title{
+  margin-block-end: 20px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+  margin-top: 56px;
+}
+
+.about-description{
+  margin-top: 20px;
+}
+
+.about-button{
+  margin-block-start: 32px;
+  height: 50px;
+  background-color: #1a2236;
+  color: #fff;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Poppins', serif;
+  font-weight: 500;
+}
+
+.download-icon{
+  margin-left: 20px;
+  background-image: url(./images/ic_download.svg);
+  width: 26px;
+  height: 25px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-button:hover{
+  background-color: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+  box-sizing: border-box;
+}
+
+.about-button:focus{
+  background-color: #fff;
+  color: #1a2236;
+  border: 2px solid #1a2236;
+  box-sizing: border-box;
+}
+
+.about-button:hover .download-icon{
+  filter: invert(1);
+}
+
+.actual-button:focus .download-icon{
+  filter: invert(1);
+}
+
+.skills{
+  display: grid;
+  grid-template: 1fr/1fr;
+  margin-top: 40px;
+  gap: 16px;
+}
+
+.languages-skills{
+  background-image: url(./images/ic_languages_mob.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 50px;
+  font-size: 20px;
+  font-family: 'Poppins', serif;
+  font-weight: 800;
+  background-color: #1C528A;
+  color: #fff;
+}
+
+.languages-title{
+  margin-bottom: 21px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.languages-list{
+  list-style-position: inside;
+}
+
+.actual-language{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.frameworks{
+  background-image: url(./images/ic_framework.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 50px;
+  font-size: 20px;
+  font-family: 'Poppins', serif;
+  font-weight: 800;
+  background-color: #E2505C;
+  color: #fff;
+}
+
+.frameworks-title{
+  margin-bottom: 21px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.frameworks-list{
+  list-style-position: inside;
+}
+
+.actual-frameworks{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.skills-skills{
+  background-image: url(./images/ic_skills.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 50px;
+  font-size: 20px;
+  font-family: 'Poppins', serif;
+  font-weight: 800;
+  background-color: #FEBF52;
+  color: #fff;
+}
+
+.skills-title{
+  margin-bottom: 21px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
 .skills-list{
   list-style-position: inside;
+}
+
+.actual-skills{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
 }
