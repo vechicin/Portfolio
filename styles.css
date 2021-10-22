@@ -93,3 +93,7 @@
   background-color: #fff;
   color: #1a2236;
 }
+
+.skills-list{
+  list-style-position: inside;
+}
