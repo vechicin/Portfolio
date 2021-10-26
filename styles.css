@@ -371,3 +371,79 @@
   font-weight: 600;
   line-height: 27px;
 }
+
+/* ------------Contact US------------- */
+.contact-form {
+  margin-top: 50px;
+  background-image: url(./images/image_geometry_1.svg);
+  background-repeat: no-repeat;
+  background-color: #f9f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  color: #1a2236;
+  margin: 106px 53px 20px 18px;
+}
+
+.contact-description {
+  font-size: 14px;
+  color: #1a2236;
+  margin: 0px 14px 32px 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: 'Poppins', serif;
+  letter-spacing: -0.01em;
+  text-align: left;
+  vertical-align: top;
+  width: 288px;
+  height: 63px;
+}
+
+.actual-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-input {
+  width: 288px;
+  height: 52px;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  margin: 0 14px 8px 18px;
+  padding: 8px 16px;
+}
+
+.user-input::placeholder {
+  padding: 4px 0 4px 16px;
+  font-size: 10px;
+}
+
+#user-message {
+  width: 288px;
+  height: 112px;
+  margin: 0 14px 20px 18px;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  padding: 15px 0 0 16px;
+}
+
+#user-message::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: 'Poppins', serif;
+  color: #7d7c84;
+}
+
+.submit-button {
+  width: 288px;
+  height: 44px;
+  background: #1a2236;
+  color: #fff;
+  margin: 0 14px 64px 18px;
+}
