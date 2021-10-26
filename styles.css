@@ -112,12 +112,12 @@
   display: flex;
   flex-direction: column;
   margin-inline: -16px;
+  background-color: #1a2236;
 }
 
 .project-name {
   padding: 20px;
   order: 2;
-  background-color: #1a2236;
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -159,7 +159,7 @@
 }
 
 .project-button {
-  padding: 20px;
+  padding: 10px;
   order: 2;
   background-color: #1a2236;
   color: #fff;
@@ -171,11 +171,10 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  margin-top: 26px;
+  margin: 20px 170px 20px 20px;
 }
 
 .project-button:hover {
@@ -370,4 +369,153 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
+}
+
+.contact-form {
+  margin-top: 50px;
+  background-image: url(./images/image_geometry_1.svg);
+  background-repeat: no-repeat;
+  background-color: #f9f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  color: #1a2236;
+  margin: 106px 53px 20px 18px;
+  line-height: 50px;
+}
+
+.contact-description {
+  font-size: 14px;
+  color: #1a2236;
+  margin: 0 14px 32px 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: 'Poppins', serif;
+  letter-spacing: -1%;
+  text-align: left;
+  vertical-align: top;
+  height: 63px;
+}
+
+.actual-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+#user-message {
+  height: 112px;
+  margin: 0 14px 20px 18px;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  padding: 15px 0 0 16px;
+}
+
+#user-message::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: 'Poppins', serif;
+  color: #7d7c84;
+}
+
+.submit-button {
+  height: 44px;
+  background: #1a2236;
+  color: #fff;
+  margin: 0 14px 64px 18px;
+  border: none;
+  font-family: 'Poppins', serif;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.submit-button:hover {
+  border: 1px solid #1a2236;
+  background-color: #fff;
+  color: #1a2236;
+}
+
+.submit-button:focus {
+  border: 2px solid #1a2236;
+  background-color: #fff;
+  color: #1a2236;
+}
+
+.full-input {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  margin: 0 14px 8px 18px;
+  padding: 8px 16px;
+  background-color: #fff;
+}
+
+input {
+  outline: none;
+  border: none;
+  display: block;
+  line-height: 1.2em;
+  font-size: 14pt;
+  height: 52px;
+  width: 100%;
+}
+
+input::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: 'Poppins', serif;
+  color: #7d7c84;
+}
+
+input:hover {
+  border: 1px solid #1a2236;
+}
+
+input:focus {
+  border: 2px solid #1a2236;
+}
+
+label {
+  display: block;
+  font-size: 10px;
+  font-family: 'Poppins', serif;
+  line-height: 100%;
+  color: #7d7c84;
+}
+
+.social-media {
+  background-color: #1a2236;
+  height: 150px;
+  width: 100%;
+}
+
+.social-media-text {
+  margin: 32px 0 0 16px;
+  color: #92dcdc;
+  font-family: 'Poppins', serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  background-image: url(./images/ic_link_teal.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 40%;
+}
+
+.social-media-icons {
+  display: flex;
+  margin: 0 16px 0 16px;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.actual-icons {
+  margin: 32px 29px 40px 0;
 }
