@@ -380,7 +380,6 @@
   background-color: #f9f9fa;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .contact-title {
@@ -388,19 +387,19 @@
   font-size: 50px;
   color: #1a2236;
   margin: 106px 53px 20px 18px;
+  line-height: 50px;
 }
 
 .contact-description {
   font-size: 14px;
   color: #1a2236;
-  margin: 0px 14px 32px 18px;
+  margin: 0 14px 32px 18px;
   line-height: 21px;
   font-weight: 400;
   font-family: 'Poppins', serif;
-  letter-spacing: -0.01em;
+  letter-spacing: -1%;
   text-align: left;
   vertical-align: top;
-  width: 288px;
   height: 63px;
 }
 
@@ -409,22 +408,7 @@
   flex-direction: column;
 }
 
-.user-input {
-  width: 288px;
-  height: 52px;
-  border: 1px solid #dfdfe0;
-  border-radius: 4px;
-  margin: 0 14px 8px 18px;
-  padding: 8px 16px;
-}
-
-.user-input::placeholder {
-  padding: 4px 0 4px 16px;
-  font-size: 10px;
-}
-
 #user-message {
-  width: 288px;
   height: 112px;
   margin: 0 14px 20px 18px;
   border: 1px solid #dfdfe0;
@@ -441,9 +425,90 @@
 }
 
 .submit-button {
-  width: 288px;
   height: 44px;
   background: #1a2236;
   color: #fff;
   margin: 0 14px 64px 18px;
+  border: none;
+  font-family: 'Poppins', serif;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.submit-button:hover {
+  border: 1px solid #1a2236;
+  background-color: #fff;
+  color: #1a2236;
+}
+
+.submit-button:focus {
+  border: 2px solid #1a2236;
+  background-color: #fff;
+  color: #1a2236;
+}
+
+.full-input {
+  display: inline-block;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  margin: 0 14px 8px 18px;
+  padding: 8px 16px;
+  background-color: #fff;
+}
+
+input {
+  outline: none;
+  border: none;
+  display: block;
+  line-height: 1.2em;
+  font-size: 14pt;
+  height: 52px;
+  width: 100%;
+}
+
+input::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: 'Poppins', serif;
+  color: #7d7c84;
+}
+
+label {
+  display: block;
+  font-size: 10px;
+  font-family: 'Poppins', serif;
+  line-height: 100%;
+  color: #7d7c84;
+}
+
+.social-media {
+  background-color: #1a2236;
+  height: 150px;
+  width: 100%;
+}
+
+.social-media-text {
+  margin: 32px 0 0 16px;
+  color: #92dcdc;
+  font-family: 'Poppins', serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  background-image: url(./images/ic_link_teal.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 40%;
+}
+
+.social-media-icons {
+  display: flex;
+  margin: 0 16px 0 16px;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.actual-icons {
+  margin: 32px 29px 40px 0;
 }

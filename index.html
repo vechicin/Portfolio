@@ -43,10 +43,10 @@
                     <li class="languages">HTML/CSS</li>
                     <li class="languages">Ruby on Rails</li>
                     <li class="languages">JavaScript</li>
-                    <button type="button" class="project-button">
-                        See this project <span class="arrow-icon"></span>
-                    </button>
                 </ul>
+                <button type="button" class="project-button">
+                    See this project <span class="arrow-icon"></span>
+                </button>
             </div>
             <div class="projects-template">
                 <h3 class="project-name">Project name goes here</h3>
@@ -58,10 +58,10 @@
                     <li class="languages">HTML/CSS</li>
                     <li class="languages">Ruby on Rails</li>
                     <li class="languages">JavaScript</li>
-                    <button type="button" class="project-button">
-                        See this project <span class="arrow-icon"></span>
-                    </button>
                 </ul>
+                <button type="button" class="project-button">
+                    See this project <span class="arrow-icon"></span>
+                </button>
             </div>
             <div class="projects-template">
                 <h3 class="project-name">Project name goes here</h3>
@@ -73,10 +73,10 @@
                     <li class="languages">HTML/CSS</li>
                     <li class="languages">Ruby on Rails</li>
                     <li class="languages">JavaScript</li>
-                    <button type="button" class="project-button">
-                        See this project <span class="arrow-icon"></span>
-                    </button>
                 </ul>
+                <button type="button" class="project-button">
+                    See this project <span class="arrow-icon"></span>
+                </button>
             </div>
             <div class="projects-template">
                 <h3 class="project-name">Project name goes here</h3>
@@ -88,10 +88,10 @@
                     <li class="languages">HTML/CSS</li>
                     <li class="languages">Ruby on Rails</li>
                     <li class="languages">JavaScript</li>
-                    <button type="button" class="project-button">
-                        See this project <span class="arrow-icon"></span>
-                    </button>
                 </ul>
+                <button type="button" class="project-button">
+                    See this project <span class="arrow-icon"></span>
+                </button>
             </div>
             <div class="projects-template">
                 <h3 class="project-name">Project name goes here</h3>
@@ -103,10 +103,10 @@
                     <li class="languages">HTML/CSS</li>
                     <li class="languages">Ruby on Rails</li>
                     <li class="languages">JavaScript</li>
-                    <button type="button" class="project-button">
-                        See this project <span class="arrow-icon"></span>
-                    </button>
                 </ul>
+                <button type="button" class="project-button">
+                    See this project <span class="arrow-icon"></span>
+                </button>
             </div>
             <div class="projects-template">
                 <h3 class="project-name">Project name goes here</h3>
@@ -118,10 +118,10 @@
                     <li class="languages">HTML/CSS</li>
                     <li class="languages">Ruby on Rails</li>
                     <li class="languages">JavaScript</li>
-                    <button type="button" class="project-button">
-                        See this project <span class="arrow-icon"></span>
-                    </button>
                 </ul>
+                <button type="button" class="project-button">
+                    See this project <span class="arrow-icon"></span>
+                </button>
             </div>
         </section>
         <section class="about">
@@ -172,13 +172,43 @@
                 tempor incididunt ut labore et
                 dolore magna.</p>
             <form action="https://formspree.io/f/mvodnypq" method="POST" class="actual-contact">
-                <input type="text" class="user-input" maxlength="30" placeholder="Your name" value="Anastasiia" required>
-                <input type="email" class="user-input" placeholder="Your email" required>
-                <textarea name="user-message" id="user-message" cols="30" rows="10" maxlength="500" placeholder="Enter your message here..."></textarea>
+                <div class="full-input">
+                    <label for="name">Your name</label>
+                    <input type="text" class="user-input" maxlength="30" name="name" id="name"
+                        placeholder="Enter your name here..." value="Anastasiia" required>
+                </div>
+                <div class="full-input">
+                    <label for="email">Your email</label>
+                    <input type="email" class="user-input" name="email" id="email"
+                        placeholder="Enter your email here..." value="l" required>
+                </div>
+                <textarea name="user-message" id="user-message" cols="30" rows="10" maxlength="500"
+                    placeholder="Enter your message here..."></textarea>
                 <button type="submit" class="submit-button">Start collaboration</button>
             </form>
-            <section>
-                <p>Get my resume</p>
+            <section class="social-media">
+                <h2 class="social-media-text">Get my Resume</h2>
+                <ul class="social-media-icons">
+                    <li>
+                        <img class="actual-icons" src="./images/ic_stackoverflow.png"
+                            alt="This should be Stack Overflow's icon">
+                    </li>
+                    <li>
+                        <img class="actual-icons" src="./images/ic_github.png" alt="This should be GitHub's icon">
+                    </li>
+                    <li>
+                        <img class="actual-icons" src="./images/ic_twitter.png" alt="This should be Twitter's icon">
+                    </li>
+                    <li>
+                        <img class="actual-icons" src="./images/ic_linkedin.png" alt="This should be LinkedIn's icon">
+                    </li>
+                    <li>
+                        <img class="actual-icons" src="./images/ic_medium.png" alt="This should be Medium's icon">
+                    </li>
+                    <li>
+                        <img class="actual-icons" src="./images/ic_angellist.png" alt="This should be AngelList's icon">
+                    </li>
+                </ul>
             </section>
         </footer>
     </div>
