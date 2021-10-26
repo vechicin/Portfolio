@@ -112,12 +112,13 @@
   display: flex;
   flex-direction: column;
   margin-inline: -16px;
+  background-color: #1a2236;
 }
 
 .project-name {
   padding: 20px;
   order: 2;
-  background-color: #1a2236;
+  
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -159,7 +160,7 @@
 }
 
 .project-button {
-  padding: 20px;
+  padding: 10px;
   order: 2;
   background-color: #1a2236;
   color: #fff;
@@ -171,11 +172,12 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  margin-top: 26px;
+  /* margin-top: 26px; */
+  margin: 20px 175px 20px 20px;
 }
 
 .project-button:hover {
