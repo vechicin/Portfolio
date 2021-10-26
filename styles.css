@@ -118,7 +118,6 @@
 .project-name {
   padding: 20px;
   order: 2;
-  
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -172,12 +171,10 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  /* margin-top: 26px; */
-  margin: 20px 175px 20px 20px;
+  margin: 20px 170px 20px 20px;
 }
 
 .project-button:hover {
