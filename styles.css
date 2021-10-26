@@ -371,7 +371,6 @@
   line-height: 27px;
 }
 
-/* ------------Contact US------------- */
 .contact-form {
   margin-top: 50px;
   background-image: url(./images/image_geometry_1.svg);
@@ -447,7 +446,8 @@
 }
 
 .full-input {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #dfdfe0;
   border-radius: 4px;
   margin: 0 14px 8px 18px;
@@ -471,6 +471,14 @@ input::placeholder {
   font-weight: 400;
   font-family: 'Poppins', serif;
   color: #7d7c84;
+}
+
+input:hover {
+  border: 1px solid #1a2236;
+}
+
+input:focus {
+  border: 2px solid #1a2236;
 }
 
 label {
