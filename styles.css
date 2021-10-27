@@ -8,6 +8,14 @@
   .navbar-links {
     display: none;
   }
+
+  .contact-description-desktop {
+    display: none;
+  }
+
+  .desktop-form-image {
+    display: none;
+  }
 }
 
 .wrapper {
@@ -642,5 +650,112 @@ label {
   .projects-title {
     writing-mode: vertical-lr;
     text-orientation: initial;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-container {
+    order: 2;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 289px 289px;
+    grid-template-rows: 289px 289px;
+    list-style: none;
+    gap: 0;
+    margin-left: 160px;
+    margin-right: 96px;
+    margin-bottom: 158px;
+    background-image: url(./images/image_dots_with_teal.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .about-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+    margin-bottom: 30px;
+    color: #1a2236;
+  }
+
+  .about-description {
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1a2236;
+    margin-bottom: 42px;
+  }
+
+  .about-button {
+    width: 254px;
+    height: 70px;
+    font-family: 'Poppins', serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .contact-form {
+    background-image: url(./images/image-geometry_6.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-title {
+    align-self: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 110px;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 40px;
+  }
+
+  .contact-description {
+    display: none;
+  }
+
+  .contact-description-desktop {
+    align-self: center;
+    margin-bottom: 82px;
+    font-family: 'Poppins', serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: -1%;
+    margin-left: 446px;
+    margin-right: 446px;
+  }
+
+  .input-container {
+    display: flex;
+    margin-left: 449px
+  }
+
+  .full-input {
+    margin-right: 35px;
+    margin-bottom: 42px;
+  }
+
+  #user-message {
+    margin-left: 467px;
+    margin-right: 462px;
+    margin-bottom: 40px;
+  }
+
+  .submit-button {
+    margin-left: 593px;
+    margin-right: 593px;
+    height: 70px;
+  }
+
+  .geo-image {
+    margin-left: 1089px;
   }
 }

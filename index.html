@@ -143,15 +143,19 @@
             </div>
         </section>
         <section class="about">
-            <h2 class="about-title">About</h2>
-            <p class="about-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ea eiusmod
-            </p>
-            <button type="button" class="about-button">
-                Get my CV <span class="download-icon"></span>
-            </button>
+            <div class="about-container">
+                <h2 class="about-title">About</h2>
+                <p class="about-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ea eiusmod
+                </p>
+                <button type="button" class="about-button">
+                    Get my CV <span class="download-icon"></span>
+                </button>
+            </div>
             <ul class="skills">
                 <li class="languages-skills">
                     <h3 class="languages-title">Languages</h3>
@@ -189,7 +193,13 @@
             <p class="contact-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et
                 dolore magna.</p>
+            <p class="contact-description-desktop">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
             <form action="https://formspree.io/f/mvodnypq" method="POST" class="actual-contact">
+                <div class="input-container">
                 <div class="full-input">
                     <label for="name">Your name</label>
                     <input type="text" class="user-input" maxlength="30" name="name" id="name"
@@ -200,9 +210,13 @@
                     <input type="email" class="user-input" name="email" id="email"
                         placeholder="Enter your email here..." required>
                 </div>
+                </div>
                 <textarea name="user-message" id="user-message" cols="30" rows="10" maxlength="500"
                     placeholder="Enter your message here..."></textarea>
                 <button type="submit" class="submit-button">Start collaboration</button>
+                <div class="desktop-form-image">
+                    <img class="geo-image" src="./images/image-geometry_7.png" alt="This should be a colorful, geometric design">
+                </div>
             </form>
             <section class="social-media">
                 <h2 class="social-media-text">Get my Resume</h2>
