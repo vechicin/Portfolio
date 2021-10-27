@@ -4,11 +4,16 @@
   padding: 0;
 }
 
+@media only screen and (max-width: 992px) {
+  .navbar-links {
+    display: none;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
   background-image: url(./images/image_geometry_1.svg);
   background-repeat: no-repeat;
 }
@@ -71,12 +76,12 @@
 }
 
 .bottom-image {
-  background-image: url(./images/image_geometry_2.svg);
+  background-image: url(./images/image_geometry_2.png);
   background-size: cover;
   background-repeat: no-repeat;
   margin-inline: -16px;
-  height: 180px;
-  width: 100vw;
+  height: 204px;
+  margin-bottom: 10px;
 }
 
 .actual-button:hover {
@@ -109,6 +114,13 @@
 }
 
 .projects-template {
+  display: flex;
+  flex-direction: column;
+  margin-inline: -16px;
+  background-color: #1a2236;
+}
+
+.projects-template-1 {
   display: flex;
   flex-direction: column;
   margin-inline: -16px;
@@ -518,4 +530,117 @@ label {
 
 .actual-icons {
   margin: 32px 29px 40px 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .wrapper {
+    background: none;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0.5px 0 #dddfe6;
+  }
+
+  .btn-icon {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .navbar-links {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: #1a2236;
+  }
+
+  .actual-links {
+    list-style: none;
+    margin-right: 50px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 877px;
+    position: relative;
+    margin-block-start: 0;
+    margin-block-end: 210px;
+  }
+
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/image_dots.png);
+    background-repeat: no-repeat;
+    background-position: bottom 2.4% right;
+  }
+
+  .name {
+    margin: 192px 94px 60px 160px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+  }
+
+  .description {
+    margin: 0 94px 59px 160px;
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .bottom-image {
+    display: none;
+  }
+
+  .actual-button {
+    margin-left: 160px;
+    width: 254px;
+    height: 70px;
+    border: none;
+  }
+
+  .side-image {
+    background-image: url(./images/image-geometry_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 102.5%;
+  }
+
+  .projects-section {
+    display: flex;
+  }
+
+  .projects-template {
+    display: none;
+  }
+
+  .projects-template-1 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+  .projects-title {
+    writing-mode: vertical-lr;
+    text-orientation: initial;
+  }
 }
