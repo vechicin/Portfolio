@@ -386,6 +386,11 @@
   color: #1a2236;
   margin: 106px 53px 20px 18px;
   line-height: 50px;
+  transition: font-size 4s;
+}
+
+.contact-title:hover {
+  font-size: 100px;
 }
 
 .contact-description {
