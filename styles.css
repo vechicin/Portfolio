@@ -232,6 +232,18 @@
 
 .about-description {
   margin-top: 20px;
+  animation-duration: 6s;
+  animation-name: sliding;
+}
+
+@keyframes sliding {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }
 
 .about-button {
