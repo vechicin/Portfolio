@@ -552,7 +552,7 @@ label {
   margin: 32px 29px 40px 0;
 }
 
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .wrapper {
     background: none;
   }
@@ -835,7 +835,6 @@ label {
     font-family: 'Poppins', serif;
     font-weight: 400;
     font-size: 16px;
-    resize: n;
   }
 
   .submit-button {
@@ -873,6 +872,10 @@ label {
 
   .desktop-social-left {
     display: flex;
+    background-image: url(./images/ic-link_teal.png);
+    background-repeat: no-repeat;
+    background-position: 100% 63%;
+    background-size: 24px;
   }
 
   .desktop-social-media-text {
@@ -885,11 +888,5 @@ label {
     font-weight: 500;
     font-size: 18px;
     line-height: 100%;
-  }
-
-  .desktop-download-icon {
-    background-image: url(./images/ic-link_teal.png);
-    background-repeat: no-repeat;
-    background-size: 24px;
   }
 }
