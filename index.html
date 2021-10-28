@@ -50,21 +50,25 @@
         <div class="bottom-image"></div>
         </section>
         <section class="projects-section">
-            <h2 class="projects-title">Projects</h2>
-            <div class="projects-template-1">
-                <h3 class="project-name">Project name goes here</h3>
-                <div class="project-image">
-                    <img class="actual-image" src="images/image1.png"
-                        alt="This is an image of someone typing on a computer">
+            <div class="first-grid">
+                <h2 class="projects-title">Projects</h2>
+                <div class="projects-template-1">
+                        <div class="project-image">
+                            <img class="actual-image" src="images/image1.png"
+                                alt="This is an image of someone typing on a computer">
+                        </div>
+                        <div class="project-container">
+                        <h3 class="project-name">Project name goes here</h3>
+                        <ul class="project-tags">
+                            <li class="languages">HTML/CSS</li>
+                            <li class="languages">Ruby on Rails</li>
+                            <li class="languages">JavaScript</li>
+                        </ul>
+                        <button type="button" class="project-button">
+                            See this project <span class="arrow-icon"></span>
+                        </button>
+                    </div>
                 </div>
-                <ul class="project-tags">
-                    <li class="languages">HTML/CSS</li>
-                    <li class="languages">Ruby on Rails</li>
-                    <li class="languages">JavaScript</li>
-                </ul>
-                <button type="button" class="project-button">
-                    See this project <span class="arrow-icon"></span>
-                </button>
             </div>
             <div class="projects-template">
                 <h3 class="project-name">Project name goes here</h3>
@@ -200,26 +204,32 @@
             </p>
             <form action="https://formspree.io/f/mvodnypq" method="POST" class="actual-contact">
                 <div class="input-container">
-                <div class="full-input">
-                    <label for="name">Your name</label>
-                    <input type="text" class="user-input" maxlength="30" name="name" id="name"
-                        placeholder="Enter your name here..." required>
+                    <div class="full-input">
+                        <label class="label-text" for="name">Your name</label>
+                        <input type="text" class="user-input" maxlength="30" name="name" id="name"
+                            placeholder="Enter your name here..." required>
+                    </div>
+                    <div class="full-input">
+                        <label class="label-text" for="email">Your email</label>
+                        <input type="email" class="user-input" name="email" id="email"
+                            placeholder="Enter your email here..." required>
+                    </div>
                 </div>
-                <div class="full-input">
-                    <label for="email">Your email</label>
-                    <input type="email" class="user-input" name="email" id="email"
-                        placeholder="Enter your email here..." required>
-                </div>
-                </div>
+                <label class="textarea-label" for="textarea">Message</label>
                 <textarea name="user-message" id="user-message" cols="30" rows="10" maxlength="500"
                     placeholder="Enter your message here..."></textarea>
                 <button type="submit" class="submit-button">Start collaboration</button>
                 <div class="desktop-form-image">
-                    <img class="geo-image" src="./images/image-geometry_7.png" alt="This should be a colorful, geometric design">
+                    <img class="geo-image" src="./images/image-geometry_7.png"
+                        alt="This should be a colorful, geometric design">
                 </div>
             </form>
             <section class="social-media">
                 <h2 class="social-media-text">Get my Resume</h2>
+                <div class="desktop-social-left">
+                <h2 class="desktop-social-media-text">Get my CV</h2>
+                <div class="desktop-download-icon"></div>
+                </div>
                 <ul class="social-media-icons">
                     <li>
                         <img class="actual-icons" src="./images/ic_stackoverflow.png"
