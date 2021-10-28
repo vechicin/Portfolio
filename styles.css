@@ -223,6 +223,11 @@
   line-height: 100%;
   color: #1a2236;
   margin-top: 56px;
+  transition: font-size 2s;
+}
+
+.about-title:hover {
+  font-size: 80px;
 }
 
 .about-description {
