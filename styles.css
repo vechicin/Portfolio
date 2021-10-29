@@ -28,6 +28,14 @@
   .projects-image-container {
     display: none;
   }
+
+  .third-row {
+    display: none;
+  }
+
+  .fourth-row {
+    display: none;
+  }
 }
 
 .wrapper {
@@ -670,6 +678,25 @@ label {
     margin-inline: 0;
   }
 
+  .project-container {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #1a2236;
+    height: 65%;
+    opacity: 97%;
+  }
+
+  .project-container-2 {
+    visibility: hidden;
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    background: #1a2236;
+    height: 42%;
+  }
+
   .projects-template-1:hover > .project-container {
     visibility: visible;
   }
@@ -684,6 +711,7 @@ label {
     margin-top: 60px;
     margin-left: 60px;
     line-height: 48px;
+    position: absolute;
   }
 
   .project-image {
@@ -696,12 +724,14 @@ label {
     background: none;
     margin-top: 16%;
     margin-left: 7.5%;
+    position: absolute;
   }
 
   .project-button {
     height: 51px;
     margin-top: 30%;
     margin-left: 9.5%;
+    position: absolute;
   }
 
   .languages {
@@ -737,25 +767,6 @@ label {
     order: 2;
   }
 
-  .project-container {
-    visibility: hidden;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: #1a2236;
-    height: 65%;
-    opacity: 97%;
-  }
-
-  .project-container-2 {
-    visibility: hidden;
-    position: absolute;
-    bottom: 50%;
-    width: 100%;
-    background: #1a2236;
-    height: 42%;
-  }
-
   .project-name-2 {
     font-family: 'Poppins', serif;
     font-size: 40px;
@@ -766,21 +777,9 @@ label {
     margin-left: 5%;
   }
 
-  .project-name {
-    position: absolute;
-  }
-
-  .project-tags {
-    position: absolute;
-  }
-
   #project-tags-2 {
     margin-top: 2%;
     margin-left: 2%;
-  }
-
-  .project-button {
-    position: absolute;
   }
 
   #project-button-2 {
@@ -793,7 +792,6 @@ label {
     font-size: 110px;
     font-weight: 400;
     margin-left: 51%;
-    line-height: none;
     margin-block-start: 0;
     margin-block-end: 0;
   }
@@ -937,7 +935,7 @@ label {
 
   .full-input {
     border: none;
-    background: none
+    background: none;
   }
 
   input {
