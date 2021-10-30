@@ -16,37 +16,104 @@
     <div class="wrapper">
         <nav class="hamburger">
             <button type="button" class="btn-icon"></button>
+            <ul class="navbar-links">
+                <li class="actual-links">
+                    <a href="#">Hello</a>
+                </li>
+                <li class="actual-links">
+                    <a href="#">Portfolio</a>
+                </li>
+                <li class="actual-links">
+                    <a href="#">About</a>
+                </li>
+                <li class="actual-links">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
         </nav>
         <section class="container">
-            <h1 class="name">Charlie Giorgania</h1>
-            <p class="description">
-                Hello! I am a software developer! I can
-                help you build a product, feature or
-                website. Taka a look of my works.
-                If you like what you see and have a
-                project you need coded, don’t hesitate
-                and contact me.</p>
-            <button type="button" class="actual-button">
-                Start collaboration
-            </button>
-            <div class="bottom-image"></div>
-        </section>
-        <section class="projects-section">
-            <h2 class="projects-title">Projects</h2>
-            <div class="projects-template">
-                <h3 class="project-name">Project name goes here</h3>
-                <div class="project-image">
-                    <img class="actual-image" src="images/image1.png"
-                        alt="This is an image of someone typing on a computer">
-                </div>
-                <ul class="project-tags">
-                    <li class="languages">HTML/CSS</li>
-                    <li class="languages">Ruby on Rails</li>
-                    <li class="languages">JavaScript</li>
-                </ul>
-                <button type="button" class="project-button">
-                    See this project <span class="arrow-icon"></span>
+            <div class="name-container">
+                <h1 class="name">Charlie Giorgania</h1>
+                <p class="description">
+                    Hello! I am a software developer! I can
+                    help you build a product, feature or
+                    website. Taka a look of my works.
+                    If you like what you see and have a
+                    project you need coded, don’t hesitate
+                    and contact me.</p>
+                <button type="button" class="actual-button">
+                    Start collaboration
                 </button>
+            </div>
+            <div class="side-image"></div>
+        </section>
+        <div class="bottom-image"></div>
+        <section class="projects-section">
+            <div class="first-grid">
+                <h2 class="projects-title">Projects</h2>
+                <div class="projects-template-1">
+                    <div class="project-image">
+                        <img class="actual-image" src="images/image1.png"
+                            alt="This is an image of someone typing on a computer">
+                    </div>
+                    <div class="project-container">
+                        <h3 class="project-name">Project name goes here</h3>
+                        <ul class="project-tags">
+                            <li class="languages">HTML/CSS</li>
+                            <li class="languages">Ruby on Rails</li>
+                            <li class="languages">JavaScript</li>
+                        </ul>
+                        <button type="button" class="project-button">
+                            See this project <span class="arrow-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-image-container">
+                <div class="project-images">
+                    <img class="geometry-image" id="macbook" src="./images/Rectangle_46.png"
+                        alt="This should be an image of a laptop with a colorful wallpaper">
+                </div>
+                <div class="project-images">
+                    <img class="geometry-image" src="/images/image-geometry_2.png"
+                        alt="This should be an image of different geometric shapes">
+                </div>
+                <div class="projects-template-2">
+                    <div class="project-image-2">
+                        <img class="geometry-image" src="./images/Rectangle_25.png"
+                            alt="This should be an image of a laptop with a pink wallpaper">
+                    </div>
+                    <img class="tilted-laptop" src="./images/Rectangle_26.png"
+                        alt="This should be an image of a floating tilted laptop">
+                    <div class="project-container-2">
+                        <h3 class="project-name-2">Project name goes...</h3>
+                        <ul class="project-tags" id="project-tags-2">
+                            <li class="languages" id="languages-1">HTML/CSS</li>
+                            <li class="languages" id="languages-2">Ruby on Rails</li>
+                            <li class="languages" id="languages-3">+1</li>
+                        </ul>
+                        <button type="button" class="project-button" id="project-button-2">
+                            See this project <span class="arrow-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="third-row">
+                <div class="third-row-images">
+                    <img class="actual-third-image" src="./images/Rectangle_27.png"
+                        alt="This should be a laptop with a wallpaper that shows a company logo">
+                </div>
+                <div id="geometry-3" class="actual-third-image"></div>
+            </div>
+            <div class="fourth-row">
+                <div class="first-column">
+                    <img class="geometry-5" src="./images/image-geometry_5.png"
+                        alt="This should be an image of different colorful geometrical shapes">
+                </div>
+                <div class="second-column">
+                    <img class="slanted-laptop" src="./images/Rectangle_47.png"
+                        alt="This should be an image of a laptop with a yellow background">
+                </div>
             </div>
             <div class="projects-template">
                 <h3 class="project-name">Project name goes here</h3>
@@ -125,15 +192,19 @@
             </div>
         </section>
         <section class="about">
-            <h2 class="about-title">About</h2>
-            <p class="about-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ea eiusmod
-            </p>
-            <button type="button" class="about-button">
-                Get my CV <span class="download-icon"></span>
-            </button>
+            <div class="about-container">
+                <h2 class="about-title">About</h2>
+                <p class="about-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ea eiusmod
+                </p>
+                <button type="button" class="about-button">
+                    Get my CV <span class="download-icon"></span>
+                </button>
+            </div>
             <ul class="skills">
                 <li class="languages-skills">
                     <h3 class="languages-title">Languages</h3>
@@ -171,23 +242,34 @@
             <p class="contact-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et
                 dolore magna.</p>
+            <p class="contact-description-desktop">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.
+            </p>
             <form action="https://formspree.io/f/mvodnypq" method="POST" class="actual-contact">
-                <div class="full-input">
-                    <label for="name">Your name</label>
-                    <input type="text" class="user-input" maxlength="30" name="name" id="name"
-                        placeholder="Enter your name here..." required>
+                <div class="input-container">
+                    <div class="full-input">
+                        <label class="label-text" for="name">Your name</label>
+                        <input type="text" class="user-input" maxlength="30" name="name" id="name"
+                            placeholder="Enter your name here..." required>
+                    </div>
+                    <div class="full-input">
+                        <label class="label-text" for="email">Your email</label>
+                        <input type="email" class="user-input" name="email" id="email"
+                            placeholder="Enter your email here..." required>
+                    </div>
                 </div>
-                <div class="full-input">
-                    <label for="email">Your email</label>
-                    <input type="email" class="user-input" name="email" id="email"
-                        placeholder="Enter your email here..." required>
-                </div>
+                <label class="textarea-label" for="user-message">Message</label>
                 <textarea name="user-message" id="user-message" cols="30" rows="10" maxlength="500"
                     placeholder="Enter your message here..."></textarea>
                 <button type="submit" class="submit-button">Start collaboration</button>
             </form>
             <section class="social-media">
                 <h2 class="social-media-text">Get my Resume</h2>
+                <div class="desktop-social-left">
+                    <h2 class="desktop-social-media-text">Get my CV</h2>
+                </div>
                 <ul class="social-media-icons">
                     <li>
                         <img class="actual-icons" src="./images/ic_stackoverflow.png"
