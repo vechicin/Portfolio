@@ -5,6 +5,8 @@
 
 ![screenshot](./images/screenshot.png)
 
+If you want to check the full page, please follow [this link](https://vechicin.github.io/Portfolio/). 
+
 ## Built With
 
 - HTML and CSS
