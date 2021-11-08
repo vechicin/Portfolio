@@ -36,6 +36,10 @@
   .fourth-row {
     display: none;
   }
+
+  .hamburger {
+    display: none;
+  }
 }
 
 body {
@@ -54,6 +58,18 @@ body {
 .hamburger {
   display: flex;
   justify-content: flex-end;
+}
+
+.mobile-menu .navbar-links {
+
+}
+
+.mobile-menu .btn-icon {
+
+}
+
+.mobile-menu .actual-links {
+  
 }
 
 .btn-icon {
