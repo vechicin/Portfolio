@@ -52,7 +52,6 @@ body {
   width: 100vw;
   background-image: url(./images/image_geometry_1.svg);
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 .hamburger {
@@ -585,7 +584,8 @@ label {
   height: 100vh;
   display: flex;
   list-style: none;
-  background-image: url(images/image_geometry_menu_1.png),
+  background-image:
+    url(images/image_geometry_menu_1.png),
     url(images/image_geometry_menu_2.png);
   background-position: top left, bottom left;
   background-repeat: no-repeat;
@@ -595,7 +595,7 @@ label {
 
 .mobile-menu .navbar-links a {
   text-decoration: none;
-  color: #000000;
+  color: #000;
   font-family: "Poppins", serif;
   font-size: 16px;
   line-height: 300%;
