@@ -60,19 +60,6 @@ body {
   justify-content: flex-end;
 }
 
-.mobile-menu .navbar-links {
-  
-
-}
-
-.mobile-menu .btn-icon {
-
-}
-
-.mobile-menu .actual-links {
-
-}
-
 .btn-icon {
   background-image: url(./images/ic_menu.svg);
   background-repeat: no-repeat;
@@ -91,7 +78,7 @@ body {
 
 .name {
   color: #1a2236;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 50px;
   line-height: 100%;
   margin-block-end: 20px;
@@ -100,7 +87,7 @@ body {
 
 .description {
   color: #1a2236;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -117,7 +104,7 @@ body {
   background: #1a2236;
   color: #fff;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -155,7 +142,7 @@ body {
 }
 
 .projects-title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 50px;
   line-height: 100%;
   margin-block-start: 40px;
@@ -184,7 +171,7 @@ body {
   padding: 20px;
   order: 2;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 80%;
@@ -216,7 +203,7 @@ body {
   padding: 10px;
   background-color: #98dede;
   color: #1a2236;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 10.33334px;
   line-height: 80%;
@@ -237,7 +224,7 @@ body {
   display: flex;
   justify-content: center;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin: 20px 170px 20px 20px;
 }
@@ -282,7 +269,7 @@ body {
 
 .about-title {
   margin-block-end: 20px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 50px;
   line-height: 100%;
@@ -306,7 +293,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   font-weight: 500;
 }
 
@@ -355,7 +342,7 @@ body {
   background-position: right bottom;
   padding: 50px;
   font-size: 20px;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   font-weight: 800;
   background-color: #1c528a;
   color: #fff;
@@ -384,7 +371,7 @@ body {
   background-position: right bottom;
   padding: 50px;
   font-size: 20px;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   font-weight: 800;
   background-color: #e2505c;
   color: #fff;
@@ -413,7 +400,7 @@ body {
   background-position: right bottom;
   padding: 50px;
   font-size: 20px;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   font-weight: 800;
   background-color: #febf52;
   color: #fff;
@@ -446,7 +433,7 @@ body {
 }
 
 .contact-title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 50px;
   color: #1a2236;
   margin: 106px 53px 20px 18px;
@@ -459,7 +446,7 @@ body {
   margin: 0 14px 32px 18px;
   line-height: 21px;
   font-weight: 400;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   letter-spacing: -1%;
   text-align: left;
   vertical-align: top;
@@ -483,7 +470,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   color: #7d7c84;
 }
 
@@ -493,7 +480,7 @@ body {
   color: #fff;
   margin: 0 14px 64px 18px;
   border: none;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   font-size: 16px;
   line-height: 100%;
 }
@@ -534,7 +521,7 @@ input::placeholder {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   color: #7d7c84;
 }
 
@@ -549,7 +536,7 @@ input:focus {
 label {
   display: block;
   font-size: 10px;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   line-height: 100%;
   color: #7d7c84;
 }
@@ -563,7 +550,7 @@ label {
 .social-media-text {
   margin: 32px 0 0 16px;
   color: #92dcdc;
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
@@ -585,6 +572,41 @@ label {
   margin: 32px 29px 40px 0;
 }
 
+/* Mobile Menu */
+.mobile-menu .navbar-links {
+  position: fixed;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  list-style: none;
+  background-image: url(images/image_geometry_menu_1.png),
+    url(images/image_geometry_menu_2.png);
+  background-position: top left, bottom left;
+  background-repeat: no-repeat;
+  background-size: 75%, contain;
+  overflow: hidden;
+}
+
+.mobile-menu .navbar-links a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  line-height: 300%;
+}
+
+.mobile-menu .btn-icon {
+  position: fixed;
+  background-image: url(images/Union.png);
+  z-index: 2;
+}
+
 @media screen and (min-width: 992px) {
   .wrapper {
     background-image: none;
@@ -592,7 +614,7 @@ label {
 
   .hamburger {
     justify-content: center;
-    font-family: 'Poppins', serif;
+    font-family: "Poppins", serif;
     font-size: 16px;
     font-weight: 400;
     align-items: center;
@@ -754,7 +776,7 @@ label {
   }
 
   .project-name-2 {
-    font-family: 'Poppins', serif;
+    font-family: "Poppins", serif;
     color: #fff;
     font-weight: 700;
     padding-top: 2%;
@@ -854,7 +876,7 @@ label {
     display: inherit;
     margin-left: 30%;
     margin-right: 30%;
-    font-family: 'Poppins', serif;
+    font-family: "Poppins", serif;
     font-weight: 400;
     font-size: 1.2vh;
     margin-top: 2%;
@@ -902,7 +924,7 @@ label {
 
   .desktop-social-media-text {
     display: flex;
-    font-family: 'Poppins', serif;
+    font-family: "Poppins", serif;
     font-weight: 500;
     color: #92dcdc;
     padding: 12% 12% 12% 25%;
