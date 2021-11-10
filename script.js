@@ -273,6 +273,8 @@ projects.forEach((project) => {
 //Contact Form Validation
 const form = document.querySelector("form");
 const emailInput = document.querySelector("#email");
+const nameInput = document.querySelector("#name");
+const messageInput = document.querySelector("#user-message");
 const errorElement = document.querySelector(".error-messages");
 const emailField = document.querySelector("#email-input");
 const errorMessages = [];
@@ -300,7 +302,7 @@ function isEmail(input) {
   return false;
 }
 
-form.addEventListener("submit", function (event) {
+form.addEventListener("submit", async function (event) {
   event.preventDefault();
 
   // Reset
@@ -322,7 +324,6 @@ form.addEventListener("submit", function (event) {
     );
   }
 
-  errorMessages.push("asad");
   // @TODO: Testing just for email, refactor to include other inputs
   if (errorMessages.length) {
     emailField.classList.add("error");
@@ -337,5 +338,7 @@ form.addEventListener("submit", function (event) {
 
       errorElement.appendChild(div);
     });
+  } else {
+    form.submit();
   }
 });
