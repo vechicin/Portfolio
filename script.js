@@ -96,8 +96,6 @@ const projects = [
   },
 ];
 
-// const modal = document.querySelector('.modal');
-// const projectTemplate = document.querySelector('.article');
 /**
  *
  * @param {string} type Tag name
@@ -178,20 +176,11 @@ const getTemplateObject = (project) => {
         tag: 'ul',
         className: 'project-tags',
         children: [
+          // Inserted below with the technologies array
           // {
           //   tag: 'li',
           //   className: 'languages',
           //   textContent: 'HTML/CSS',
-          // },
-          // {
-          //   tag: 'li',
-          //   className: 'languages',
-          //   textContent: 'Ruby on Rails',
-          // },
-          // {
-          //   tag: 'li',
-          //   className: 'languages',
-          //   textContent: 'JavaScript',
           // },
         ],
       },
@@ -206,6 +195,7 @@ const getTemplateObject = (project) => {
     ],
   };
 
+  // Add the technologies to the project-tags element
   if (project.technologies) {
     const tagsIndex = el.children.findIndex((item) => item.className === 'project-tags');
 
