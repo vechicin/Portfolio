@@ -1,146 +1,261 @@
 // Elements
-const navButton = document.querySelector(".btn-icon");
-const menuMobile = document.querySelector(".hamburger");
-const menuButtons = document.querySelectorAll(".actual-links");
+const navButton = document.querySelector('.btn-icon');
+const menuMobile = document.querySelector('.hamburger');
+const menuButtons = document.querySelectorAll('.actual-links');
 
 // Functions
 const handleLink = () => {
-  menuButtons.forEach((menuButton) =>
-    menuButton.addEventListener("click", (event) => {
-      event.stopPropagation();
-      navButton.click();
-    })
-  );
+  menuButtons.forEach((menuButton) => menuButton.addEventListener('click', (event) => {
+    event.stopPropagation();
+    navButton.click();
+  }));
 };
 
 const handleClick = (event) => {
   event.stopPropagation();
   event.preventDefault();
-  menuMobile.classList.toggle("mobile-menu");
+  menuMobile.classList.toggle('mobile-menu');
 
   handleLink();
 };
 
 const handleWindow = () => {
-  navButton.addEventListener("click", handleClick);
+  navButton.addEventListener('click', handleClick);
 };
 
-window.addEventListener("resize", () => {
+window.addEventListener('resize', () => {
   if (window.innerWidth < 992) {
     handleWindow();
   } else {
-    menuMobile.classList.remove("mobile-menu");
+    menuMobile.classList.remove('mobile-menu');
   }
 });
 
 // Popup menu script
 
-let projects = [
+const projects = [
   {
     id: 1,
-    name: "Project name goes here",
+    name: 'Project name goes here',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?",
-    featureImage: "images/image1.png",
-    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-    linkToLiveVersion: "#",
-    linkToSource: "#",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?',
+    featureImage: 'images/image1.png',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#',
+    linkToSource: '#',
   },
   {
     id: 2,
-    name: "Project name goes here",
+    name: 'Project name goes here',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?",
-    featureImage: "images/image2.png",
-    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-    linkToLiveVersion: "#",
-    linkToSource: "#",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?',
+    featureImage: 'images/image2.png',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#',
+    linkToSource: '#',
   },
   {
     id: 3,
-    name: "Project name goes here",
+    name: 'Project name goes here',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?",
-    featureImage: "images/image3.png",
-    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-    linkToLiveVersion: "#",
-    linkToSource: "#",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?',
+    featureImage: 'images/image3.png',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#',
+    linkToSource: '#',
   },
   {
     id: 4,
-    name: "Project name goes here",
+    name: 'Project name goes here',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?",
-    featureImage: "images/image4.png",
-    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-    linkToLiveVersion: "#",
-    linkToSource: "#",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?',
+    featureImage: 'images/image4.png',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#',
+    linkToSource: '#',
   },
   {
     id: 5,
-    name: "Project name goes here",
+    name: 'Project name goes here',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?",
-    featureImage: "images/image5.png",
-    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-    linkToLiveVersion: "#",
-    linkToSource: "#",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?',
+    featureImage: 'images/image5.png',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#',
+    linkToSource: '#',
   },
   {
     id: 6,
-    name: "Project name goes here",
+    name: 'Project name goes here',
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?",
-    featureImage: "images/image6.png",
-    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
-    linkToLiveVersion: "#",
-    linkToSource: "#",
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?',
+    featureImage: 'images/image6.png',
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    linkToLiveVersion: '#',
+    linkToSource: '#',
   },
 ];
 
-const modal = document.querySelector(".modal");
-const projectTemplate = document.querySelector(".article");
-const createElementWithClass = function(type, className) {
-  const element = document.createElement(type)
+// const modal = document.querySelector('.modal');
+// const projectTemplate = document.querySelector('.article');
+const createElementWithClass = (type, className) => {
+  const element = document.createElement(type);
   element.classList.add(className);
-  return element;  
-}
+  return element;
+};
 
-let createTemplateOne = function (project) {
-  let projectsTemplateOne = createElementWithClass('div', 'projects-template-1');
-  let projectImage = createElementWithClass('div', 'project-image');
-  let image = createElementWithClass('img', 'actual-image');
+const createTemplateOne = (project) => {
+  const projectsTemplateOne = createElementWithClass(
+    'div',
+    'projects-template-1',
+  );
+  const projectImage = createElementWithClass('div', 'project-image');
+  const image = createElementWithClass('img', 'actual-image');
   image.src = project.featureImage;
   image.alt = project.name;
   projectImage.appendChild(image);
   projectsTemplateOne.appendChild(projectImage);
-  let projectContainer = createElementWithClass('div', 'project-container');
-  let h3 = createElementWithClass('h3', 'project-name');
+  const projectContainer = createElementWithClass('div', 'project-container');
+  const h3 = createElementWithClass('h3', 'project-name');
   h3.textContent = project.name;
-  let projectTags = createElementWithClass('ul', 'project-tags');
-  project.technologies.forEach(technology => {
-    let li = createElementWithClass('li', 'languages');
+  const projectTags = createElementWithClass('ul', 'project-tags');
+  project.technologies.forEach((technology) => {
+    const li = createElementWithClass('li', 'languages');
     li.textContent = technology;
-    projectTags.appendChild(li);    
-  }); 
-  let button = createElementWithClass('button', 'project-button');
+    projectTags.appendChild(li);
+  });
+  const button = createElementWithClass('button', 'project-button');
   button.innerHTML = 'See this project <span class="arrow-icon"></span>';
   projectContainer.appendChild(h3);
   projectContainer.appendChild(projectTags);
   projectContainer.appendChild(button);
   projectsTemplateOne.appendChild(projectContainer);
   return projectsTemplateOne;
-}
+};
 
-let projectTemplateX = createTemplateOne(projects[0]);
-let firstGrid = document.querySelector('.first-grid');
+const projectTemplateX = createTemplateOne(projects[0]);
+const firstGrid = document.querySelector('.first-grid');
 firstGrid.appendChild(projectTemplateX);
 
-// projects.forEach((project) => {
-//   const temp = project.content.cl;
-//   const menuButton = project.querySelector(".project-button");
-//   menuButton.addEventListener("click", () => {
-//     console.log("clicked");
-//   });
-// });
+/**
+ *
+ * @param {object} project Project object
+ * @returns {object}
+ */
+const getTemplateObject = (project) => {
+  const el = {
+    tag: 'div',
+    className: 'projects-template',
+    children: [
+      {
+        tag: 'h3',
+        className: 'project-name',
+        textContent: project.name,
+      },
+      {
+        tag: 'div',
+        className: 'project-image',
+        children: [
+          {
+            tag: 'img',
+            className: 'actual-image',
+            attributes: {
+              src: project.featureImage,
+              alt: project.name,
+            },
+          },
+        ],
+      },
+      {
+        tag: 'ul',
+        className: 'project-tags',
+        children: [
+          // {
+          //   tag: 'li',
+          //   className: 'languages',
+          //   textContent: 'HTML/CSS',
+          // },
+          // {
+          //   tag: 'li',
+          //   className: 'languages',
+          //   textContent: 'Ruby on Rails',
+          // },
+          // {
+          //   tag: 'li',
+          //   className: 'languages',
+          //   textContent: 'JavaScript',
+          // },
+        ],
+      },
+      {
+        tag: 'button',
+        className: 'project-button',
+        attributes: {
+          type: 'button',
+        },
+        innerHTML: 'See this project <span class="arrow-icon"></span>',
+      },
+    ],
+  };
 
+  if (project.technologies) {
+    const tagsIndex = el.children.findIndex((item) => item.className === 'project-tags');
+
+    project.technologies.forEach((technology) => {
+      el.children[tagsIndex].children.push({
+        tag: 'li',
+        className: 'languages',
+        textContent: technology,
+      });
+    });
+  }
+
+  return el;
+};
+
+/**
+ *
+ * @param {object} param0 Project element object
+ * @returns Element
+ */
+const buildTemplate = ({
+  tag,
+  className,
+  attributes,
+  children,
+  innerHTML,
+  textContent,
+}) => {
+  const element = createElementWithClass(tag, className);
+  if (textContent) {
+    element.textContent = textContent;
+  } else if (innerHTML) {
+    element.innerHTML = innerHTML;
+  }
+
+  if (attributes) {
+    Object.keys(attributes).forEach((key) => {
+      element.setAttribute(key, attributes[key]);
+    });
+  }
+
+  if (children) {
+    children.forEach((child) => {
+      element.appendChild(buildTemplate(child));
+    });
+  }
+
+  return element;
+};
+
+// Get elements
+const projectsElement = document.querySelector('.projects-section');
+
+// Append elements to the projects parent
+projects.forEach((project) => {
+  if (project.id !== projects[0].id) {
+    const child = getTemplateObject(project);
+    const childElement = buildTemplate(child);
+    projectsElement.appendChild(childElement);
+  }
+});
