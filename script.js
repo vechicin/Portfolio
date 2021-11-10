@@ -217,7 +217,7 @@ const getTemplateObject = (project) => {
  * @argument param0.tag {string}
  * @argument param0.className {string}
  * @argument param0.attributes {string}
- * @argument param0.children {string}
+ * @argument param0.children {array)}
  * @argument param0.innerHTML {string}
  * @argument param0.textContent {string}
  *
