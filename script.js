@@ -265,3 +265,43 @@ projects.forEach((project) => {
     projectsElement.appendChild(childElement);
   }
 });
+
+//Contact Form Validation
+const form = document.querySelector('form');
+const emailInput = document.querySelector('#email');
+const errorMessages = [];
+
+function isNotEmpty (input) {
+  if (input.value.trim() === "") {
+    return false;
+  }
+  return true;
+}
+
+function isLowerCase (input) {
+  if (input.value.toLowerCase() === input.value) {
+    return true;    
+  } 
+  return false;
+}
+
+function isEmail (input) {
+  const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (emailRegex.test(input.value.trim())) {
+    return true;
+  }
+  return false;
+}
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  if (!isNotEmpty(emailInput)) {
+    errorMessages.push('Please enter your email address');
+  }
+  if (!isLowerCase(emailInput)) {
+    errorMessages.push('Your submission needs to be all lower case');
+  }
+  if (!isEmail(emailInput)) {
+    errorMessages.push('Your submission needs to be a valid email format, e.g. email@email.com');
+  }
+})
