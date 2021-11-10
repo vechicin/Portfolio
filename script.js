@@ -100,11 +100,47 @@ let projects = [
 
 const modal = document.querySelector(".modal");
 const projectTemplate = document.querySelector(".article");
+const createElementWithClass = function(type, className) {
+  const element = document.createElement(type)
+  element.classList.add(className);
+  return element;  
+}
 
-projects.forEach((project) => {
-  const temp = project.content.cl;
-  const menuButton = project.querySelector(".project-button");
-  menuButton.addEventListener("click", () => {
-    console.log("clicked");
-  });
-});
+let createTemplateOne = function (project) {
+  let projectsTemplateOne = createElementWithClass('div', 'projects-template-1');
+  let projectImage = createElementWithClass('div', 'project-image');
+  let image = createElementWithClass('img', 'actual-image');
+  image.src = project.featureImage;
+  image.alt = project.name;
+  projectImage.appendChild(image);
+  projectsTemplateOne.appendChild(projectImage);
+  let projectContainer = createElementWithClass('div', 'project-container');
+  let h3 = createElementWithClass('h3', 'project-name');
+  h3.textContent = project.name;
+  let projectTags = createElementWithClass('ul', 'project-tags');
+  project.technologies.forEach(technology => {
+    let li = createElementWithClass('li', 'languages');
+    li.textContent = technology;
+    projectTags.appendChild(li);    
+  }); 
+  let button = createElementWithClass('button', 'project-button');
+  button.innerHTML = 'See this project <span class="arrow-icon"></span>';
+  projectContainer.appendChild(h3);
+  projectContainer.appendChild(projectTags);
+  projectContainer.appendChild(button);
+  projectsTemplateOne.appendChild(projectContainer);
+  return projectsTemplateOne;
+}
+
+let projectTemplateX = createTemplateOne(projects[0]);
+let firstGrid = document.querySelector('.first-grid');
+firstGrid.appendChild(projectTemplateX);
+
+// projects.forEach((project) => {
+//   const temp = project.content.cl;
+//   const menuButton = project.querySelector(".project-button");
+//   menuButton.addEventListener("click", () => {
+//     console.log("clicked");
+//   });
+// });
+
