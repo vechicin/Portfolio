@@ -463,6 +463,7 @@ body {
   border: 1px solid #dfdfe0;
   border-radius: 4px;
   padding: 15px 0 0 16px;
+  font-family: 'Poppins', serif;
 }
 
 #user-message::placeholder {
@@ -584,9 +585,7 @@ label {
   height: 100vh;
   display: flex;
   list-style: none;
-  background-image:
-    url(images/image_geometry_menu_1.png),
-    url(images/image_geometry_menu_2.png);
+  background-image: url(images/image_geometry_menu_1.png), url(images/image_geometry_menu_2.png);
   background-position: top left, bottom left;
   background-repeat: no-repeat;
   background-size: 75%, contain;
@@ -605,6 +604,33 @@ label {
   position: fixed;
   background-image: url(images/Union.png);
   z-index: 2;
+}
+
+/* form error message */
+.error-messages {
+  width: 50%;
+  margin-left: 25%;
+  color: #842029;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: "poppins", serif;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.error-message {
+  text-align: center;
+}
+
+.error {
+  background-color: #f8d7da;
+}
+
+input.error {
+  background-image: url("images/exclamation-triangle-fill.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 10%;
 }
 
 @media screen and (min-width: 992px) {
