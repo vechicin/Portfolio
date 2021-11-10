@@ -274,6 +274,7 @@ projects.forEach((project) => {
 const form = document.querySelector("form");
 const emailInput = document.querySelector("#email");
 const errorElement = document.querySelector(".error-messages");
+const emailField = document.querySelector("#email-input");
 const errorMessages = [];
 
 function isNotEmpty(input) {
@@ -303,7 +304,9 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   // Reset
+  emailField.classList.remove("error");
   emailInput.classList.remove("error");
+  errorElement.classList.remove("error");
   errorMessages.splice(0);
   errorElement.textContent = "";
 
@@ -319,9 +322,12 @@ form.addEventListener("submit", function (event) {
     );
   }
 
+  errorMessages.push("asad");
   // @TODO: Testing just for email, refactor to include other inputs
   if (errorMessages.length) {
+    emailField.classList.add("error");
     emailInput.classList.add("error");
+    errorElement.classList.add("error");
 
     // Display errors
     errorMessages.forEach((error) => {
