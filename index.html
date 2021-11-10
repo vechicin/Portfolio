@@ -212,18 +212,19 @@
                 name="name"
                 id="name"
                 placeholder="Enter your name here..."
+                autocomplete="name"
                 required
               />
             </div>
             <div class="full-input">
               <label class="label-text" for="email">Your email</label>
               <input
-                type="email"
+                type="text"
                 class="user-input"
                 name="email"
                 id="email"
                 placeholder="Enter your email here..."
-                required
+                autocomplete="email"
               />
             </div>
           </div>
@@ -236,6 +237,9 @@
             maxlength="500"
             placeholder="Enter your message here..."
           ></textarea>
+
+          <div class="error-messages"></div>
+
           <button type="submit" class="submit-button">
             Start collaboration
           </button>

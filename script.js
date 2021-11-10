@@ -1,33 +1,35 @@
 // Elements
-const navButton = document.querySelector('.btn-icon');
-const menuMobile = document.querySelector('.hamburger');
-const menuButtons = document.querySelectorAll('.actual-links');
+const navButton = document.querySelector(".btn-icon");
+const menuMobile = document.querySelector(".hamburger");
+const menuButtons = document.querySelectorAll(".actual-links");
 
 // Functions
 const handleLink = () => {
-  menuButtons.forEach((menuButton) => menuButton.addEventListener('click', (event) => {
-    event.stopPropagation();
-    navButton.click();
-  }));
+  menuButtons.forEach((menuButton) =>
+    menuButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      navButton.click();
+    })
+  );
 };
 
 const handleClick = (event) => {
   event.stopPropagation();
   event.preventDefault();
-  menuMobile.classList.toggle('mobile-menu');
+  menuMobile.classList.toggle("mobile-menu");
 
   handleLink();
 };
 
 const handleWindow = () => {
-  navButton.addEventListener('click', handleClick);
+  navButton.addEventListener("click", handleClick);
 };
 
-window.addEventListener('resize', () => {
+window.addEventListener("resize", () => {
   if (window.innerWidth < 992) {
     handleWindow();
   } else {
-    menuMobile.classList.remove('mobile-menu');
+    menuMobile.classList.remove("mobile-menu");
   }
 });
 
@@ -36,63 +38,63 @@ window.addEventListener('resize', () => {
 const projects = [
   {
     id: 1,
-    name: 'Project name goes here',
+    name: "Project name goes here",
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?',
-    featureImage: 'images/image1.png',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    linkToLiveVersion: '#',
-    linkToSource: '#',
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?",
+    featureImage: "images/image1.png",
+    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
+    linkToLiveVersion: "#",
+    linkToSource: "#",
   },
   {
     id: 2,
-    name: 'Project name goes here',
+    name: "Project name goes here",
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?',
-    featureImage: 'images/image2.png',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    linkToLiveVersion: '#',
-    linkToSource: '#',
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?",
+    featureImage: "images/image2.png",
+    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
+    linkToLiveVersion: "#",
+    linkToSource: "#",
   },
   {
     id: 3,
-    name: 'Project name goes here',
+    name: "Project name goes here",
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?',
-    featureImage: 'images/image3.png',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    linkToLiveVersion: '#',
-    linkToSource: '#',
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?",
+    featureImage: "images/image3.png",
+    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
+    linkToLiveVersion: "#",
+    linkToSource: "#",
   },
   {
     id: 4,
-    name: 'Project name goes here',
+    name: "Project name goes here",
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?',
-    featureImage: 'images/image4.png',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    linkToLiveVersion: '#',
-    linkToSource: '#',
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?",
+    featureImage: "images/image4.png",
+    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
+    linkToLiveVersion: "#",
+    linkToSource: "#",
   },
   {
     id: 5,
-    name: 'Project name goes here',
+    name: "Project name goes here",
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?',
-    featureImage: 'images/image5.png',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    linkToLiveVersion: '#',
-    linkToSource: '#',
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?",
+    featureImage: "images/image5.png",
+    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
+    linkToLiveVersion: "#",
+    linkToSource: "#",
   },
   {
     id: 6,
-    name: 'Project name goes here',
+    name: "Project name goes here",
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?',
-    featureImage: 'images/image6.png',
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    linkToLiveVersion: '#',
-    linkToSource: '#',
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime commodi eligendi molestias veniam, voluptas officiis nihil laudantium sed, cumque, fugiat fuga unde repudiandae dolores dolorum veritatis quia aliquam sunt illum!Impedit minima blanditiis unde obcaecati libero, esse magnam repellendus doloribus ducimus modi enim laborum praesentium! Explicabo soluta a voluptatem itaque optio! Eius id saepe nisi ut dolorum iusto illo quos?",
+    featureImage: "images/image6.png",
+    technologies: ["HTML/CSS", "Ruby on Rails", "JavaScript"],
+    linkToLiveVersion: "#",
+    linkToSource: "#",
   },
 ];
 
@@ -112,25 +114,25 @@ const createElementWithClass = (type, className) => {
 
 const createTemplateOne = (project) => {
   const projectsTemplateOne = createElementWithClass(
-    'div',
-    'projects-template-1',
+    "div",
+    "projects-template-1"
   );
-  const projectImage = createElementWithClass('div', 'project-image');
-  const image = createElementWithClass('img', 'actual-image');
+  const projectImage = createElementWithClass("div", "project-image");
+  const image = createElementWithClass("img", "actual-image");
   image.src = project.featureImage;
   image.alt = project.name;
   projectImage.appendChild(image);
   projectsTemplateOne.appendChild(projectImage);
-  const projectContainer = createElementWithClass('div', 'project-container');
-  const h3 = createElementWithClass('h3', 'project-name');
+  const projectContainer = createElementWithClass("div", "project-container");
+  const h3 = createElementWithClass("h3", "project-name");
   h3.textContent = project.name;
-  const projectTags = createElementWithClass('ul', 'project-tags');
+  const projectTags = createElementWithClass("ul", "project-tags");
   project.technologies.forEach((technology) => {
-    const li = createElementWithClass('li', 'languages');
+    const li = createElementWithClass("li", "languages");
     li.textContent = technology;
     projectTags.appendChild(li);
   });
-  const button = createElementWithClass('button', 'project-button');
+  const button = createElementWithClass("button", "project-button");
   button.innerHTML = 'See this project <span class="arrow-icon"></span>';
   projectContainer.appendChild(h3);
   projectContainer.appendChild(projectTags);
@@ -140,7 +142,7 @@ const createTemplateOne = (project) => {
 };
 
 const projectTemplateX = createTemplateOne(projects[0]);
-const firstGrid = document.querySelector('.first-grid');
+const firstGrid = document.querySelector(".first-grid");
 firstGrid.appendChild(projectTemplateX);
 
 /**
@@ -150,21 +152,21 @@ firstGrid.appendChild(projectTemplateX);
  */
 const getTemplateObject = (project) => {
   const el = {
-    tag: 'div',
-    className: 'projects-template',
+    tag: "div",
+    className: "projects-template",
     children: [
       {
-        tag: 'h3',
-        className: 'project-name',
+        tag: "h3",
+        className: "project-name",
         textContent: project.name,
       },
       {
-        tag: 'div',
-        className: 'project-image',
+        tag: "div",
+        className: "project-image",
         children: [
           {
-            tag: 'img',
-            className: 'actual-image',
+            tag: "img",
+            className: "actual-image",
             attributes: {
               src: project.featureImage,
               alt: project.name,
@@ -173,8 +175,8 @@ const getTemplateObject = (project) => {
         ],
       },
       {
-        tag: 'ul',
-        className: 'project-tags',
+        tag: "ul",
+        className: "project-tags",
         children: [
           // Inserted below with the technologies array
           // {
@@ -185,10 +187,10 @@ const getTemplateObject = (project) => {
         ],
       },
       {
-        tag: 'button',
-        className: 'project-button',
+        tag: "button",
+        className: "project-button",
         attributes: {
-          type: 'button',
+          type: "button",
         },
         innerHTML: 'See this project <span class="arrow-icon"></span>',
       },
@@ -197,12 +199,14 @@ const getTemplateObject = (project) => {
 
   // Add the technologies to the project-tags element
   if (project.technologies) {
-    const tagsIndex = el.children.findIndex((item) => item.className === 'project-tags');
+    const tagsIndex = el.children.findIndex(
+      (item) => item.className === "project-tags"
+    );
 
     project.technologies.forEach((technology) => {
       el.children[tagsIndex].children.push({
-        tag: 'li',
-        className: 'languages',
+        tag: "li",
+        className: "languages",
         textContent: technology,
       });
     });
@@ -255,7 +259,7 @@ const buildTemplate = ({
 };
 
 // Get elements
-const projectsElement = document.querySelector('.projects-section');
+const projectsElement = document.querySelector(".projects-section");
 
 // Append elements to the projects parent
 projects.forEach((project) => {
@@ -267,41 +271,65 @@ projects.forEach((project) => {
 });
 
 //Contact Form Validation
-const form = document.querySelector('form');
-const emailInput = document.querySelector('#email');
+const form = document.querySelector("form");
+const emailInput = document.querySelector("#email");
+const errorElement = document.querySelector(".error-messages");
 const errorMessages = [];
 
-function isNotEmpty (input) {
+function isNotEmpty(input) {
   if (input.value.trim() === "") {
     return false;
   }
   return true;
 }
 
-function isLowerCase (input) {
+function isLowerCase(input) {
   if (input.value.toLowerCase() === input.value) {
-    return true;    
-  } 
+    return true;
+  }
   return false;
 }
 
-function isEmail (input) {
-  const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+function isEmail(input) {
+  const emailRegex =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (emailRegex.test(input.value.trim())) {
     return true;
   }
   return false;
 }
 
-form.addEventListener("submit", function(event) {
+form.addEventListener("submit", function (event) {
   event.preventDefault();
+
+  // Reset
+  emailInput.classList.remove("error");
+  errorMessages.splice(0);
+  errorElement.textContent = "";
+
   if (!isNotEmpty(emailInput)) {
-    errorMessages.push('Please enter your email address');
+    errorMessages.push("Please enter your email address");
   }
   if (!isLowerCase(emailInput)) {
-    errorMessages.push('Your submission needs to be all lower case');
+    errorMessages.push("Your submission needs to be all lower case");
   }
   if (!isEmail(emailInput)) {
-    errorMessages.push('Your submission needs to be a valid email format, e.g. email@email.com');
+    errorMessages.push(
+      "Your submission needs to be a valid email format, e.g. email@email.com"
+    );
   }
-})
+
+  // @TODO: Testing just for email, refactor to include other inputs
+  if (errorMessages.length) {
+    emailInput.classList.add("error");
+
+    // Display errors
+    errorMessages.forEach((error) => {
+      const div = createElementWithClass("div", "error-message");
+      div.textContent = error;
+      div.setAttribute("role", "alert");
+
+      errorElement.appendChild(div);
+    });
+  }
+});
