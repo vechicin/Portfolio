@@ -98,9 +98,17 @@ const projects = [
 
 // const modal = document.querySelector('.modal');
 // const projectTemplate = document.querySelector('.article');
+/**
+ *
+ * @param {string} type Tag name
+ * @param {string} className Class name
+ *
+ * @returns
+ */
 const createElementWithClass = (type, className) => {
   const element = document.createElement(type);
   element.classList.add(className);
+
   return element;
 };
 
@@ -216,6 +224,13 @@ const getTemplateObject = (project) => {
 /**
  *
  * @param {object} param0 Project element object
+ * @argument param0.tag {string}
+ * @argument param0.className {string}
+ * @argument param0.attributes {string}
+ * @argument param0.children {string}
+ * @argument param0.innerHTML {string}
+ * @argument param0.textContent {string}
+ *
  * @returns Element
  */
 const buildTemplate = ({
@@ -226,6 +241,7 @@ const buildTemplate = ({
   innerHTML,
   textContent,
 }) => {
+  /** @type Element */
   const element = createElementWithClass(tag, className);
   if (textContent) {
     element.textContent = textContent;
