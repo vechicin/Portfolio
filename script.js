@@ -31,7 +31,7 @@ window.addEventListener('resize', () => {
   }
 });
 
-// Popup menu script
+// Popup Menu and Projects Section Refactor
 
 const projects = [
   {
@@ -43,6 +43,8 @@ const projects = [
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linkToLiveVersion: '#',
     linkToSource: '#',
+    buttonId : '',
+    bottomImage : ''
   },
   {
     id: 2,
@@ -53,6 +55,8 @@ const projects = [
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linkToLiveVersion: '#',
     linkToSource: '#',
+    buttonId : 'project-button-2',
+    bottomImage : 'images/Rectangle_26.png'
   },
   {
     id: 3,
@@ -63,6 +67,8 @@ const projects = [
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linkToLiveVersion: '#',
     linkToSource: '#',
+    buttonId : '',
+    bottomImage : ''
   },
   {
     id: 4,
@@ -73,6 +79,8 @@ const projects = [
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linkToLiveVersion: '#',
     linkToSource: '#',
+    buttonId : '',
+    bottomImage : ''
   },
   {
     id: 5,
@@ -83,6 +91,8 @@ const projects = [
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linkToLiveVersion: '#',
     linkToSource: '#',
+    buttonId : '',
+    bottomImage : ''
   },
   {
     id: 6,
@@ -93,6 +103,8 @@ const projects = [
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     linkToLiveVersion: '#',
     linkToSource: '#',
+    buttonId : '',
+    bottomImage : ''
   },
 ];
 
@@ -113,7 +125,7 @@ const createElementWithClass = (type, className) => {
 const createTemplateOne = (project) => {
   const projectsTemplateOne = createElementWithClass(
     'div',
-    'projects-template-1',
+    'projects-template-1'
   );
   const projectImage = createElementWithClass('div', 'project-image');
   const image = createElementWithClass('img', 'actual-image');
@@ -137,6 +149,36 @@ const createTemplateOne = (project) => {
   projectContainer.appendChild(button);
   projectsTemplateOne.appendChild(projectContainer);
   return projectsTemplateOne;
+};
+
+const createTemplateTwo = (project) => {
+  const projectsTemplateTwo = createElementWithClass('div', 'projects-template-2');
+  const projectImageTwo = createElementWithClass('div', 'project-image-2');
+  const imageTwo = createElementWithClass('img', 'geometry-image');
+  const bottomImageTwo = createElementWithClass('img', 'tilted-laptop');
+  imageTwo.src = project.featureImage;
+  imageTwo.alt = project.name;
+  bottomImageTwo.src = project.bottomImage;
+  bottomImageTwo.alt = project.name;
+  projectImageTwo.appendChild(imageTwo);
+  projectsTemplateTwo.appendChild(projectImageTwo, bottomImageTwo);
+  const projectContainerTwo = createElementWithClass('div', 'project-container-2');
+  const h3Two = createElementWithClass('h3', 'project-name-2');
+  h3Two.textContent = project.name;
+  const projectTagsTwo = createElementWithClass('ul', 'project-tags');
+  project.technologies.forEach((technology) => {
+    const liTwo = createElementWithClass('li', 'languages');
+    liTwo.textContent = technology;
+    projectTagsTwo.appendChild(liTwo);
+  });
+  const buttonTwo = createElementWithClass('button', 'project-button');
+  buttonTwo.id = project.buttonId;
+  buttonTwo.innerHTML = 'See this project <span class="arrow-icon"></span>';
+  projectContainerTwo.appendChild(h3Two);
+  projectContainerTwo.appendChild(projectTagsTwo);
+  projectContainerTwo.appendChild(buttonTwo);
+  projectsTemplateTwo.appendChild(projectContainerTwo);
+  return projectsTemplateTwo;
 };
 
 const projectTemplateX = createTemplateOne(projects[0]);
@@ -267,6 +309,9 @@ projects.forEach((project) => {
     projectsElement.appendChild(childElement);
   }
 });
+
+// Modal Window
+
 
 // Contact Form Validation
 const form = document.querySelector('form');
